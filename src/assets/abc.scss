@@ -1,0 +1,61 @@
+@function Rem($num) {
+    @return $num / 75 * 1rem;
+ }
+
+ $color-primary:yellow;
+ 
+ $abc:green;
+ 
+.yhntitle{
+    color:$abc;
+}
+
+ * {
+   box-sizing: border-box;
+ }
+ 
+ .red{
+     background:$color-primary;
+ }
+ 
+ .f45{font-size:.45rem;}
+ .f4{font-size:.4rem;}
+ .f35{font-size:.35rem;}
+ .psr{
+     position:relative;
+ }
+ .psa{
+     position:absolute;
+ }
+ .center{
+     text-align:center ;
+ }
+ 
+ /*水平垂直居中(不确定宽高)*/
+ .wh-center{
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform:translate(-50% ,-50%);
+   -moz-transform:translate(-50%, -50%);
+   -ms-transform:translate(-50% ,-50%);
+   -o-transform:translate(-50%, -50%);
+   }
+ /*垂直居中(不确定高)*/
+ .h-center{
+   position: absolute;
+   top:50%;
+   transform: translateY(-50%);
+   -webkit-transform:translateY(-50%);
+   -moz-transform:translateY(-50%);
+   -ms-transform:translateY(-50%);
+   -o-transform:translateY(-50%);
+ }
+ 
+ /*不换行溢出显示...*/
+ .ellipsis{
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+ }
