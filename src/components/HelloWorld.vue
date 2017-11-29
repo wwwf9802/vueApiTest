@@ -49,6 +49,7 @@ export default {
       this.age = "";
       this.sex = "";
       console.log("清空");
+      console.log(document.cookie);
     },
     insertPerson() {
       let that = this;
@@ -83,10 +84,13 @@ export default {
     },
     async getData() {
       this.personList = await apifuns.getData();
+      console.log(this.personList);
+      document.cookie="name=yhn&&abc=ccc";
+      console.log(document.cookie);
     }
   },
   created () {
-    document.cookie="name=yhn";
+
   },
   mounted: function() {
     this.getData();
